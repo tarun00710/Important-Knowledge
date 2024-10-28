@@ -1,0 +1,24 @@
+To upload existing project in git , follow these steps:
+
+First initialize git for your project 
+""git init""
+
+add .gitignore in your project and add files which should not be uploaded to git .
+For eg : .env node_modules logs etc.
+
+Now connect your project to your remote repo before adding / commit / pushing.
+"" git remote add origin https://github.com/username/repo-name.git ""
+
+Check the above step using:
+"" git remote -v ""
+
+Use "" git branch -M master "" if you need to rename your current branch to master for consistency, compatibility, or to match the expectations of your remote repository.  
+
+Now you just need to add your local files and commit and at last push them .
+
+"" git add . ""
+"" git commit -m "initial commit" ""
+
+Last step push :
+
+"" git push -u origin master ""
